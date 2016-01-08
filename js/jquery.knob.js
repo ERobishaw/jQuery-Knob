@@ -704,11 +704,14 @@
                 2
             ) + 2;
 
+            var iwidth = ((this.w / 2 + 4) >> 0);
+
             this.o.displayInput
                 && this.i.css({
-                        'width' : ((this.w / 2 + 4) >> 0) + 'px',
+                        'width' : iwidth + 'px',
+                        'top'   : '-' + iwidth + 'px',
                         'height' : ((this.w / 3) >> 0) + 'px',
-                        'position' : 'absolute',
+                        'position' : 'relative',
                         'vertical-align' : 'middle',
                         'margin-top' : ((this.w / 3) >> 0) + 'px',
                         'margin-left' : '-' + ((this.w * 3 / 4 + 2) >> 0) + 'px',
